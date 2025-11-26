@@ -21,7 +21,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     padding: 5vw;
@@ -44,7 +44,7 @@ header {
         -1.5px -1.5px 1px black;
     }
 
-    background: url(../img/bg-ado.jpg);
+    background: url(../img/bg-ado.jpg); /**/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -102,7 +102,7 @@ nav {
 
 @media (max-width: 768px) {
    #textbox-h2 {
-    font-size: 30px; 
+    font-size: 20px; 
   }
 }
 
@@ -114,81 +114,90 @@ nav {
 
 /*  SOBRE MIM  */
 
-#sobremim {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "titulo titulo"
-    "figura texto";
-    column-gap: 15vw;
-    row-gap: 10vh;
-    padding: 15vh;
-    padding-inline: 15vw;
 
-    background: url(../img/bg-quarto-milk-chan.jpg);
+#sobremim {
+    background: url(../img/bg-quarto-milk-chan.jpg); /**/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#sobremim_titulo {
-    grid-area: titulo;
-    order: 1;
-}
+#sobremim-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15vw;
 
-.figura {
-    grid-area: figura;
-    order: 3;
-}
-
-#sobremim_texto {
-    grid-area: texto;
-    order: 2;
+    padding: 15vh;
+    padding-inline: 15vw;
 }
 
 /*  PROJETOS  */
 
 #projetos {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "projeto1 projeto2 projeto3";
-
-    row-gap: 10vh;
-    padding: 15vh;
-    padding-inline: 15vw;
-
-    background: url(../img/bg-another.jpg);
+    background: url(../img/bg-another.jpg); /**/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#projetos_titulo {
-    grid-area: titulo;
-}
 
-#projeto1 {
-    grid-area: projeto1;
-}
+#projetos-inferior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-#projeto2 {
-    grid-area: projeto2;
+    padding: 15vh;
+    padding-inline: 15vw;
 }
-
-#projeto3 {
-    grid-area: projeto3;
-}
-
 
 /*  HABILIDADES  */
 
+#habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 3vw;
+}
+
+#habilidades-esq {
+    background-color:#FF002A;
+
+    padding: 15vh;
+    padding-inline: 15vw;
+}
+
+#habilidades-inferior {
+    display: flex;
+}
+
+#habilidades-table {
+
+}
+
+#habilidades-figura {
+    background-color: blue;
+
+    padding: 15vh;
+    padding-inline: 15vw;
+}
+
 /*  CONTATO  */
+
+#botao_topo {
+    width: 5vw;
+    height: 5vw;
+
+    background-color: rgba(25, 24, 38, 1);
+
+    box-shadow: 0 0px 35px #FF002A;
+    border: 0px solid #FF002A;
+    border-radius: 15px;
+
+    padding: 3px;
+
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    pointer-events: all;
+}
+
