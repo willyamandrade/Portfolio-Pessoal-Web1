@@ -226,7 +226,7 @@ nav {
 
 #projeto3 {
     img{
-        background: url(../img/ENA-bailarina.gif), linear-gradient(rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0.9));
+        background: url(../img/ENA-bailarina.gif), linear-gradient(rgba(255, 0, 0, 0.99), rgba(255, 0, 0, 0.99));
         background-blend-mode: multiply;
         background-repeat: no-repeat;
     background-size: cover;
@@ -328,26 +328,6 @@ input, textarea {
 
 #nome, #email, #assunto, #mensagem {
     padding-block: 2vh;
-}
-
-#nome {
-    
-}
-
-#email {
-    
-}
-
-#assunto {
-    
-}
-
-#mensagem {
-    
-}
-
-#envio {
-    
 }
 
 /*  FOOTER  */
