@@ -20,14 +20,14 @@ body {
 
 @font-face {
     font-family: 'Another';
-    src: url(../font/Another_.ttf), format('ttf');
+    src: url("../font/Another_.ttf"), format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'KomikaTXT';
-    src: url(../font/KOMTXT__.ttf), format('ttf');
+    src: url("../font/KOMTXT__.ttf"), format('truetype');
     font-weight: normal;
     font-style: normal;
 }
