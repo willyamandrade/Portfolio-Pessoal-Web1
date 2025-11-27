@@ -24,6 +24,8 @@ header {
     justify-content: space-around;
     align-items: center;
 
+    flex-wrap: wrap-reverse;
+
     padding: 5vw;
     
     h1{
@@ -78,6 +80,12 @@ nav {
     background: linear-gradient(180deg, rgba(255, 0, 42, 1) 0%, rgba(25, 24, 38, 1) 100%);
 }
 
+#degrade-insano2 {
+    height:2vh;
+    background: #FF002A;
+    background: linear-gradient(180deg, rgba(25, 24, 38, 1) 0%, red 100%);
+}
+
 .textbox-titulo {
     display: flex;
     flex-direction: column;
@@ -128,6 +136,8 @@ nav {
     align-items: center;
     column-gap: 15vw;
 
+    flex-wrap: wrap;
+
     padding: 15vh;
     padding-inline: 15vw;
 }
@@ -146,6 +156,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     padding: 15vh;
     padding-inline: 15vw;
@@ -160,7 +171,7 @@ nav {
 }
 
 #habilidades-esq {
-    background-color:#FF002A;
+    background: url(../img/bg-ENA-sem-ENA.jpg);
 
     padding: 15vh;
     padding-inline: 15vw;
