@@ -186,12 +186,6 @@ nav {
     background-position: center center;
 }
 
-#projetos:hover {
-    background-color: red, 90%
-    width: 125%;
-    height: 125%;
-}
-
 #projetos-inferior {
     display: flex;
     justify-content: space-around;
@@ -206,6 +200,9 @@ nav {
 }
 
 .projeto {
+    a{
+    pointer-events: all;
+    }
     background-color: black, 70%;
     padding: 5vw;
     margin: 5vw;
@@ -216,6 +213,12 @@ nav {
         box-shadow: 0 0px 10px #FF002A;
         border: 2px solid #FF002A;
     }
+}
+
+.projeto:hover {
+    background-color: red, 90%;
+    width: 125%;
+    height: 125%;
 }
 
 /*  HABILIDADES  */
@@ -353,4 +356,7 @@ input, textarea {
 footer {
     text-align: center;
     justify-content: center;
+    a{
+    pointer-events: all;
+    }
 }
