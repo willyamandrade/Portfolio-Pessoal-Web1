@@ -2,11 +2,12 @@ html {
     height: 100%;
     width: 100%;
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -82,8 +83,26 @@ nav {
 
 #degrade-insano2 {
     height:2vh;
-    background: #FF002A;
-    background: linear-gradient(180deg, rgba(25, 24, 38, 1) 0%, red 100%);
+    background: rgba(25, 24, 38, 1);
+    background: linear-gradient(180deg, rgba(25, 24, 38, 1) 0%, rgba(36, 30, 42, 1) 100%);
+}
+
+#degrade-insano3 {
+    height:2vh;
+    background: rgba(36, 30, 42, 1);
+    background: linear-gradient(180deg, rgba(36, 30, 42, 1) 0%, rgba(206, 27, 22, 1) 100%);
+}
+
+#degrade-insano4 {
+    height:2vh;
+    background: rgba(36, 30, 42, 1);
+    background: linear-gradient(180deg, rgba(36, 30, 42, 1) 0%, rgba(206, 27, 22, 1) 100%);
+}
+
+#degrade-insano5 {
+    height:2vh;
+    background: red;
+    background: linear-gradient(180deg, red 0%, black 100%);
 }
 
 .textbox-titulo {
@@ -91,33 +110,18 @@ nav {
     flex-direction: column;
     
     position: relative;
-
+    
     width: 60%;
     height: 25vh;
+    
+    margin-bottom: 25vh;
 }
 
-.textbox-h2 {
-    position:absolute;
-    top: 45%;
-    left:40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    transform: translate(-50%, -50%);
-    transform: rotate(4deg);
-}
-
-@media (max-width: 768px) {
-   #textbox-h2 {
-    font-size: 20px; 
-  }
-}
-
-@media (max-width: 480px) {
-  #textbox-h2 {
-    font-size: 15px; 
-  }
+@media (max-width: 600px) {
+    .textbox-titulo {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*  SOBRE MIM  */
@@ -140,6 +144,37 @@ nav {
 
     padding: 15vh;
     padding-inline: 15vw;
+    
+    text-shadow:
+        2px 0 #FF002A,
+        -2px 0 #000,
+        0 2px #000,
+        0 -2px #000,
+        1px 1px black,
+        -1px 1px black,
+        1px -1px black,
+        -1px -1px black,
+        1.5px 1.5px 1px black,
+        -1.5px 1.5px 1px black,
+        1.5px -1.5px 1px black,
+        -1.5px -1.5px 1px black;
+    
+    p {
+        background-color: black, 70%;
+        padding-left: 2vw;
+        padding-right: 5vw;
+        padding-block: 2vh;
+        box-shadow: 0 0px 35px #FF002A;
+        border: 2px solid #FF002A;
+    }
+}
+
+.figura {
+    img {
+        box-shadow: 0 0px 35px 15px #FF002A;
+        border: 2px solid #FF002A;
+    }
+    text-align: center;
 }
 
 /*  PROJETOS  */
@@ -151,6 +186,11 @@ nav {
     background-position: center center;
 }
 
+#projetos:hover {
+    background-color: red, 90%
+    width: 125%;
+    height: 125%;
+}
 
 #projetos-inferior {
     display: flex;
@@ -158,8 +198,24 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 
+    text-align: center;
+    
+    margin-top: 5vh;
     padding: 15vh;
     padding-inline: 15vw;
+}
+
+.projeto {
+    background-color: black, 70%;
+    padding: 5vw;
+    margin: 5vw;
+    box-shadow: 0 0px 35px #FF002A;
+    border: 2px solid #FF002A;
+    
+    img {
+        box-shadow: 0 0px 10px #FF002A;
+        border: 2px solid #FF002A;
+    }
 }
 
 /*  HABILIDADES  */
@@ -167,32 +223,114 @@ nav {
 #habilidades {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 3vw;
+    column-gap: 2vw;
 }
 
 #habilidades-esq {
-    background: url(../img/bg-ENA-sem-ENA.jpg);
-
-    padding: 15vh;
-    padding-inline: 15vw;
+    background: url(../img/bg-ENA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #habilidades-inferior {
     display: flex;
-}
-
-#habilidades-table {
-
-}
-
-#habilidades-figura {
-    background-color: blue;
-
+    
+    margin-top: 10vh;
     padding: 15vh;
     padding-inline: 15vw;
 }
 
+#habilidades-table {
+        background-color: black, 70%;
+        padding: 5vh
+        box-shadow: 0 0px 35px #FF002A;
+        border: 2px solid #FF002A;
+    
+    tr {
+        box-shadow: 0 0px 35px #FF002A;
+        border: 0px solid #FF002A;
+    }
+}
+
+/*
+#habilidades-figura {
+    background:
+    linear-gradient(rgba(2
+    55,0,0,0.7), rgba(255,0,0,0.7)),
+    url();
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    padding: 40vh;
+    padding-inline: 15vw;
+}
+*/
+
 /*  CONTATO  */
+
+#contato {
+    background:
+    linear-gradient(rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0.9)),
+    url(../img/yotsugi-ononoki-girando.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    background-blend-mode: multiply;
+}
+
+#contato-inferior {
+    display: flex;
+    
+    margin-top: 10vh;
+    padding: 15vh;
+    padding-inline: 15vw;
+}
+
+#contato-form {
+    box-shadow: 0 0px 35px #FF002A;
+    padding: 5vw;
+    border: 0px solid #FF002A;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+input, textarea {
+    color: #ff002a;
+    background-color: rgba(25,24,38,1);
+    pointer-events: all;
+}
+
+#nome, #email, #assunto, #mensagem {
+    padding-block: 2vh;
+}
+
+#nome {
+    
+}
+
+#email {
+    
+}
+
+#assunto {
+    
+}
+
+#mensagem {
+    
+}
+
+#envio {
+    
+}
+
+/*  FOOTER  */
 
 #botao_topo {
     width: 5vw;
@@ -212,3 +350,7 @@ nav {
     pointer-events: all;
 }
 
+footer {
+    text-align: center;
+    justify-content: center;
+}
