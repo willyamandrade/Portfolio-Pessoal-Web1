@@ -111,9 +111,12 @@ nav {
     
     position: relative;
     
-    width: 60%;
+    width: 50%;
     height: 25vh;
     
+    position: relative;
+    top: 5vh;
+    left: 5vw;
     margin-bottom: 25vh;
 }
 
@@ -160,6 +163,7 @@ nav {
         -1.5px -1.5px 1px black;
     
     p {
+        width: 15vw;
         background-color: black, 70%;
         padding-left: 2vw;
         padding-right: 5vw;
@@ -204,21 +208,30 @@ nav {
     pointer-events: all;
     }
     background-color: black, 70%;
-    padding: 5vw;
+    padding: 3vw;
     margin: 5vw;
     box-shadow: 0 0px 35px #FF002A;
     border: 2px solid #FF002A;
-    
+    flex-wrap: wrap;
     img {
         box-shadow: 0 0px 10px #FF002A;
         border: 2px solid #FF002A;
     }
+    width: 15vw;
 }
 
 .projeto:hover {
-    background-color: red, 90%;
-    width: 125%;
-    height: 125%;
+    background: rgba(255, 0, 0, 0.307);
+}
+
+#projeto3 {
+    img{
+        background: url(../img/ENA-bailarina.gif), linear-gradient(rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0.9));
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
 }
 
 /*  HABILIDADES  */
@@ -246,7 +259,7 @@ nav {
 
 #habilidades-table {
         background-color: black, 70%;
-        padding: 5vh
+        padding: 5vh;
         box-shadow: 0 0px 35px #FF002A;
         border: 2px solid #FF002A;
     
@@ -295,12 +308,16 @@ nav {
 
 #contato-form {
     box-shadow: 0 0px 35px #FF002A;
-    padding: 5vw;
+    padding: 3vw;
     border: 0px solid #FF002A;
 }
 
 input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
+}
+
+label {
+    pointer-events: all;
 }
 
 input, textarea {
